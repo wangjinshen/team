@@ -1,16 +1,5 @@
-import dva from 'dva';
-
-// 1. Initialize
-const app = dva();
-
-// 2. Plugins
-// app.use({});
-
-// 3. Model
+import app from './app';
+import router from './routes';
 app.model(require('./models/example').default);
-
-// 4. Router
-app.router(require('./routes/router').default);
-
-// 5. Start
+app.router(router);
 app.start('#root');

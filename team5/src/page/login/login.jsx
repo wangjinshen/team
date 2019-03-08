@@ -5,7 +5,6 @@ import style from './style.css'
 import {userLogin} from '../../services/example'
 import {connect} from 'dva'
 
-
 class componentName extends Component {
     constructor(props) {
         super(props);
