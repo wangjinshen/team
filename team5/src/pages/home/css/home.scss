@@ -1,6 +1,7 @@
 @charset "utf-8";
 *{
     box-sizing: border-box;
+    text-decoration: none;
 }
 :global{
 .home {
@@ -17,15 +18,8 @@
         align-items: center;
         padding:0 40px;
     }
-    
-    .center {
-        width: 45px;
-        height:45px;
-        border-radius: 50%;
-        background: #eee;
-    }
     .right {
-        width: 120px;
+        width: 30%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -35,8 +29,8 @@
         height: 100%;
         display: flex;
         .count-left {
-            width: 260px;
-            height: 100%;
+            width: 230px;
+            height: auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -48,7 +42,7 @@
             }
         }
         .count-right{
-           width: 300px
+            width: 300px
         }
     }
 }
@@ -81,6 +75,10 @@
 }
 .el-menu-item, .el-submenu__title{
     color:#fff!important;
+}
+.el-menu-item a{
+    color:#fff!important;
+
 }
 .el-menu-item:hover{
     background: #20a0ff!important
