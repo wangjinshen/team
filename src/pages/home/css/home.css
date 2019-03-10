@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 :global .home {
@@ -19,15 +20,8 @@
   padding: 0 40px;
 }
 
-:global .home .center {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: #eee;
-}
-
 :global .home .right {
-  width: 120px;
+  width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,8 +34,8 @@
 }
 
 :global .home .count .count-left {
-  width: 260px;
-  height: 100%;
+  width: 230px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,6 +83,10 @@
 }
 
 :global .el-menu-item, :global .el-submenu__title {
+  color: #fff !important;
+}
+
+:global .el-menu-item a {
   color: #fff !important;
 }
 

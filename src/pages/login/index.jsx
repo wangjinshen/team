@@ -51,6 +51,7 @@ class Login extends Component {
                       <Input
                           icon="time"
                           placeholder="密码"
+                          type='password'
                           onIconClick={this.handleIconClick.bind(this)}
                           value={this.state.user_pwd}
                           onInput={(e)=>{
