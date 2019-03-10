@@ -6,7 +6,7 @@ class RouterMap extends React.Component{
     render(){
         let {routes} = this.props  
         let defaultRoute = <Route path="/" component={()=>{
-                return <Redirect to="/login"></Redirect>
+                return <Redirect to="/home"></Redirect>
             }
         } key={1} exact></Route>        
         return <Switch>{

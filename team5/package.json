@@ -8,13 +8,18 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "draft-js": "^0.10.5",
+    "draftjs-to-html": "^0.8.4",
     "dva": "^2.4.1",
     "element-react": "^1.4.33",
     "element-theme-default": "^1.4.13",
+    "html-to-draftjs": "^1.4.0",
     "react": "^16.8.3",
     "react-dom": "^16.2.0",
+    "react-draft-wysiwyg": "^1.13.2",
     "react-hot-loader": "^4.7.1",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "react-umeditor": "^1.0.15"
   },
   "devDependencies": {
     "babel-plugin-dva-hmr": "^0.3.2",
