@@ -2,12 +2,16 @@ import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom';
 import { connect } from 'dva';
 import "./css/home.css"
-import { Layout, Menu ,Button } from 'element-react';
 import 'element-theme-default';
 import { Route} from 'dva/router';
 import TestList from '../testList'
 import Add from '../add'
 import Look from '../look'
+
+import {userIn} from '../../services/example'
+import { Layout, Menu ,Button } from 'element-react';
+
+
 
  class Home extends Component {
     onOpen() {
@@ -16,6 +20,13 @@ import Look from '../look'
 
     onClose() {
 
+    }
+    componentDidMount(){
+        console.log(userIn());
+        
+        // userIn().then(res=>{
+        //     console.log(res,'56');
+        // })
     }
     render() {
         return (

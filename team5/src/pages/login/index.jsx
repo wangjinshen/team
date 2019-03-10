@@ -17,6 +17,7 @@ class Login extends Component {
   handleIconClick(ev) {
       
   }
+  //登录
   login = () => {
     const {user_name,user_pwd} = this.state
     userLogin({user_name:user_name,user_pwd:user_pwd}).then(res=>{
