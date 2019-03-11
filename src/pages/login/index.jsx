@@ -5,7 +5,7 @@ import 'element-theme-default';
 import "./css/login.css"
 import "../../common/index.css"
 import {userLogin} from '../../services/example'
-
+import {setCookie} from "../../utils/cookie"
 class Login extends Component {
     constructor(props){
         super(props)
@@ -21,6 +21,7 @@ class Login extends Component {
     const {user_name,user_pwd} = this.state
     userLogin({user_name:user_name,user_pwd:user_pwd}).then(res=>{
         if(res.data.code === 1){
+            setCookie("token",res.data.token)
             this.props.history.push("/home")
         }else{
             alert(res.data.msg)

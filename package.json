@@ -25,6 +25,8 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "husky": "^0.12.0",
+    "jsonwebtoken": "^8.5.0",
+    "react-umeditor": "^1.0.15",
     "redbox-react": "^1.4.3",
     "roadhog": "^2.0.0",
     "sass": "^1.17.2",

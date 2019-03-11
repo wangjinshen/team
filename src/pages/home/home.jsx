@@ -8,6 +8,7 @@ import { Route} from 'dva/router';
 import TestList from '../testList'
 import Add from '../add'
 import Look from '../look'
+import {getCookie,delCookie} from "../../utils/cookie"
 
  class Home extends Component {
     onOpen() {
@@ -16,6 +17,18 @@ import Look from '../look'
 
     onClose() {
 
+    }
+    exit(){
+        //退出登录
+        delCookie("token")
+        this.props.history.push("/login")
+    }
+    componentDidMount(){
+        //跳转验证
+        let token = getCookie("token");
+        if(!token){
+            this.props.history.push("/login")
+        }
     }
     render() {
         return (
@@ -29,7 +42,7 @@ import Look from '../look'
                         </p>
                     </div>
                     <div>
-                    <Button>退出登录</Button>
+                    <Button onClick={()=>{this.exit}}>退出登录</Button>
                     </div>
                 
                 </header>
